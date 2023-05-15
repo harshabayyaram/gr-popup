@@ -1,0 +1,25 @@
+    .popup-open {
+        background-color: blue;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .popup-open:hover {
+        cursor: pointer;
+    }
+    
+    .popup {
+        position: fixed;
+        top: 50%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        background-color: white;
+        width: 500px;
+        z-index: 10;
+        max-width: 80%;
+    }
