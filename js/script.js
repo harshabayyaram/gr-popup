@@ -1,10 +1,20 @@
-$("#open").click(function() {
-    $("#a").css("display", "block");
-    $("#b").css("display", "block");
-});
+// $("#openmodal").click(function() {
+//     $("#container").css("display", "block");
+//     $("#popup").css("display", "block");
+// });
+
+// $(".cancel").click(function() {
+//     $("#container").fadeOut();
+//     $("#popup").fadeOut();
+// });
 
 
-$(".cancel").click(function() {
-    $("#a").fadeOut();
-    $("#b").fadeOut();
-});
+function openmodel() {
+    document.getElementById("container").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+}
+
+function cancel() {
+    document.getElementById("container").style.display = "none";
+    document.getElementById("popup").style.display = "none";
+}

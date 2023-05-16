@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Modal Without Bootstrap</title>
+    <title>popup</title>
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
+    <div class="title">
+        <h1>How to Add Bootstrap modal in react JS-Websolutionstuff</h1>
+    </div>
+
     <div class="main">
         <div>
-            <button id="open" onclick="openModal">Open Modal</button>
+            <button id="openmodal" onclick="openmodel()">Open Modal</button>
         </div>
     </div>
-    <div class="container" id="a">
+
+
+
+    <!-- empty container -->
+    <div class="container" id="container">
 
     </div>
-    <div class="modal" id="b">
-        <div class="header">
-            <a href="#" class="cancel">X</a>
+
+    <!-- opened popup code-->
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <h3>How to Add Bootstrap modal in react JS-Websolutionstuff</h3>
+
+            <a href="#" class="cancel" onclick="cancel()">X</a>
         </div>
-        <div class="content">
-            <form>
-                <label id="first_label">Username</label>
-                <input type="text" placeholder="Introduce tu username" />
-                <label id="second_label">Password</label>
-                <input type="password" placeholder="Introduce tu password" />
-            </form>
+
+        <div class="popup-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit illum,amet facilis aliquam necessitatibus, quaerat debitis odio ad, aspernatur nemo alias nihil. A ducimus, cumque, alias voluptatem modi earum veniam saepe mollitia blanditiis necessitatibus
+            sitLorem ipsum dolor sit amet consectetur adipisicing elit. At velit illum, a met facilis aliquam necessitatibus, quaerat debitis odio ad, aspernatur nemo alias nihil. A ducimus, cumque, alias voluptatem modi earum veniam saepe mollitia blanditiis
+            necessitatibus sitLorem ipsum dolor sit amet consectetur adipisicing elit. At velit illum, amet facilis aliquam necessitatibus, quaerat debitis odio ad, aspernatur nemo alias nihil. A ducimus, cumque, alias voluptatem modi earum veniam saepe
+            mollitia blanditiis necessitatibus sitrepellat fuga enim soluta consequatur architecto magnam. Incidunt sit eaque voluptatibus alias tempore odio.
         </div>
-        <div class="footer">
-            <button id="login">Iniciar Sesión</button>
-            <button class="cancel">Cancelar</button>
+
+        <div class="popup-footer">
+            <button id="close" class="cancel" onclick="cancel()">Close</button>
+            <button id="save">Save</button>
+
         </div>
     </div>
-    <!-- partial -->
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js "></script>
 
 </body>
 
