@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Modal Without Bootstrap</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="main">
+        <div>
+            <button id="open" onclick="openModal">Open Modal</button>
+        </div>
+    </div>
+    <div class="container" id="a">
+
+    </div>
+    <div class="modal" id="b">
+        <div class="header">
+            <a href="#" class="cancel">X</a>
+        </div>
+        <div class="content">
+            <form>
+                <label id="first_label">Username</label>
+                <input type="text" placeholder="Introduce tu username" />
+                <label id="second_label">Password</label>
+                <input type="password" placeholder="Introduce tu password" />
+            </form>
+        </div>
+        <div class="footer">
+            <button id="login">Iniciar Sesión</button>
+            <button class="cancel">Cancelar</button>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
